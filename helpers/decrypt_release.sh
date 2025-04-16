@@ -1,0 +1,4 @@
+wget "https://github.com/binsync/bs-artifacts/releases/download/v0.0.0/tooling-9.0.tar.gz.enc"
+openssl enc -d -aes-256-cbc -pbkdf2 -in tooling-9.0.tar.gz.enc -out tooling-9.0.tar.gz -pass pass:$TOOLING_KEY
+tar -cvf tooling-9.0.tar.gz
+rm -r tooling-9.0.tar.gz.enc tooling-9.0.tar.gz
