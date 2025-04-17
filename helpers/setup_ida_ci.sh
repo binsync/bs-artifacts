@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # downloads and decrypts files
-./download_and_decrypt_tooling && tar -xf tooling-9.0.tar.gz  
+./helpers/download_and_decrypt_tooling.sh && tar -xf tooling-9.0.tar.gz  
 # setup for normalized use (see refile)
 mv tooling-9.0 ~/idapro-9.0 && \
     mkdir -p ~/.idapro && \
