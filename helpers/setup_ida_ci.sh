@@ -9,4 +9,4 @@ mv tooling-9.0 ~/idapro-9.0 && \
 # install ida python
 python -m pip install ~/idapro-9.0/idalib/python \
     && python ~/idapro-9.0/idalib/python/py-activate-idalib.py \
-    && echo -e "0\n" | ./idapro-9.0/idapyswitch
+    && echo -e "0\n" | ~/idapro-9.0/idapyswitch
